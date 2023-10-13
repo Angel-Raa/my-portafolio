@@ -22,10 +22,13 @@ section {
 
 h1 {
     font-size: 2.5rem;
-    font-family:'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
 
 }
-
+.btn-info {
+ font-size: 1.1rem;
+ margin: 20px;
+}
 /* Seccion Sobre Mi*/
 .hero {
     background-color: #f5f6f7;
@@ -53,7 +56,8 @@ h1 {
     padding: 10px;
 
 }
-.sobre-mi .contenedor{
+
+.sobre-mi .contenedor {
     max-width: 600px;
     text-align: center;
 
@@ -68,8 +72,106 @@ h1 {
 
 .seccion-texto {
     font-size: 1.3rem;
-    
+
 }
+
+
+.hero-principal {
+    text-align: center;
+    /* Alinea el contenido en el centro */
+    overflow: hidden;
+    /* Oculta cualquier desbordamiento del contenido hijo */
+}
+
+.hero-principal-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.projects {
+    padding: 40px;
+
+}
+
+.projects img {
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.2s ease;
+}
+
+.proyecto-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+}
+
+.seccion-clara {
+    color: black;
+    background-color: white;
+}
+
+.text-negro {
+    color: black;
+}
+
+.text-blanco {
+    color: white;
+}
+
+.seccion-descripcion {
+    font-size: 1.2rem;
+    color: #584e4e;
+}
+
+.overlay {
+    transition: all 0.25s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.overlay p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+
+}
+
+.project {
+    position: relative;
+}
+
+.project:hover img {
+    opacity: 0.2;
+}
+
+.project:hover .overlay {
+    opacity: 1;
+
+
+}
+
+.overlay .iconos-contenedor {
+    display: flex;
+
+}
+
+.overlay i {
+    color: black;
+    font-size: 60px;
+    margin: 10px;
+
+}
+
+
+
 /* Responsivo*/
 
 @media screen and (max-width:767px) {
@@ -85,14 +187,13 @@ h1 {
 
 }
 
-.hero-principal {
-    text-align: center; /* Alinea el contenido en el centro */
-    overflow: hidden; /* Oculta cualquier desbordamiento del contenido hijo */
-}
 
-.hero-principal-img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin: 20px;
+@media screen and (max-width:400px){
+    .overlay p {
+        font-size: 18px;
+    }
+
+    .overlay i {
+        font-size: 40px;
+    }
 }
