@@ -25,10 +25,12 @@ h1 {
     font-family: 'Rubik', sans-serif;
 
 }
+
 .btn-info {
- font-size: 1.1rem;
- margin: 20px;
+    font-size: 1.1rem;
+    margin: 20px;
 }
+
 /* Seccion Sobre Mi*/
 .hero {
     background-color: #f5f6f7;
@@ -170,8 +172,54 @@ h1 {
 
 }
 
+.contacto .container {
+    margin: 40px;
+    max-width: 1100px;
+    min-height: 200px;
+    padding: 20px;
 
+}
 
+.contacto .rectangulo {
+    margin-top: -5rem;
+    background-color: rgb(13, 110, 253);
+    border-radius: 10px;
+    box-sizing: 0px 1px 4px 1px white;
+}
+
+.container .row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.contacto button {
+    color: white;
+    font-weight: bold;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1.25rem 2em;
+    margin: 10px;
+    border-radius: 100px;
+    transition: all 0.2s ease-in-out;
+
+}
+
+.contacto button i {
+    color: white;
+    font-size: 1, 3rem;
+    transition: all 0.2s ease-in-out;
+
+}
+.contacto button:hover{
+    background-color: whitesmoke;
+    color: black;
+
+}
+
+.contacto button:hover i {
+    color: black;
+}
 /* Responsivo*/
 
 @media screen and (max-width:767px) {
@@ -188,7 +236,7 @@ h1 {
 }
 
 
-@media screen and (max-width:400px){
+@media screen and (max-width:400px) {
     .overlay p {
         font-size: 18px;
     }
